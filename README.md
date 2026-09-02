@@ -46,7 +46,7 @@ Get your free key: Google AI Studio
 ### 5. Run
 streamlit run main.py
 
-### 📂 Project Structure
+## 📂 Project Structure
 resume-critiquer/
 ├── main.py
 ├── requirements.txt
@@ -54,18 +54,18 @@ resume-critiquer/
 ├── .gitignore
 └── README.md
 
-# 📦 Dependencies
+## 📦 Dependencies
 streamlit
 PyPDF2
 python-dotenv
 google-generativeai
 
-🔒 Security
+# 🔒 Security
 Never commit .env to version control.
 
 Add .env to .gitignore.
 
-👨‍💻 Author
+# 👨‍💻 Author
 Rodwan Ramzi
 [GitHub](https://github.com/RodwanRamzi) | [LinkedIn](https://www.linkedin.com/in/rodwan-ramzi-273523372/)
 
