@@ -30,23 +30,23 @@ AI-powered resume analyzer using **Google Gemini**. Upload your PDF resume and g
 git clone https://github.com/your-username/resume-critiquer.git
 cd resume-critiquer
 
-2. Create Virtual Environment
+### 2. Create Virtual Environment
 python -m venv .venv
 .venv\Scripts\activate   # Windows
 source .venv/bin/activate # Linux/Mac
 
-4. Install
+### 3. Install
 pip install -r requirements.txt
 
-6. Add your Gemini API Key
+### 4. Add your Gemini API Key
 Create .env file:
 GOOGLE_API_KEY=your_api_key_here
 Get your free key: Google AI Studio
 
-5. Run
+### 5. Run
 streamlit run main.py
 
-📂 Project Structure
+### 📂 Project Structure
 resume-critiquer/
 ├── main.py
 ├── requirements.txt
