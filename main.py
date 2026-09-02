@@ -7,10 +7,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# تهيئة Gemini بالمكتبة الجديدة
+# Initialize Gemini with the new library
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 if not GOOGLE_API_KEY:
-    st.error("⚠️ لم يتم العثور على مفتاح API. تأكد من وجود ملف .env مع GOOGLE_API_KEY.")
+    st.error("⚠️ API key not found. Please ensure .env file exists with GOOGLE_API_KEY.")
     st.stop()
 
 client = genai.Client(api_key=GOOGLE_API_KEY)
@@ -18,12 +18,12 @@ client = genai.Client(api_key=GOOGLE_API_KEY)
 st.set_page_config(page_title="AI Resume Critiquer", page_icon="📝", layout="centered")
 
 st.title("📝 AI Resume Critiquer")
-st.markdown("قم بتحميل سيرتك الذاتية بصيغة PDF واحصل على تحليل ذكي وتغذية راجعة لتحسينها.")
+st.markdown("Upload your resume in PDF or TXT format and get AI-powered feedback to improve it.")
 
-uploaded_file = st.file_uploader("اختر سيرتك الذاتية", type=["pdf", "txt"])
-job_role = st.text_input("أدخل الوظيفة التي تتقدم لها (اختياري)")
+uploaded_file = st.file_uploader("Choose your resume", type=["pdf", "txt"])
+job_role = st.text_input("Enter the job role you're applying for (optional)")
 
-analyze = st.button("🔍 تحليل السيرة الذاتية")
+analyze = st.button("🔍 Analyze Resume")
 
 def extract_text_from_pdf(pdf_file):
     pdf_reader = PyPDF2.PdfReader(pdf_file)
@@ -42,10 +42,9 @@ if analyze and uploaded_file:
         file_content = extract_text_from_file(uploaded_file)
 
         if not file_content.strip():
-            st.error("❌ الملف الذي رفعته فارغ. يرجى رفع سيرة ذاتية صالحة.")
+            st.error("❌ The uploaded file is empty. Please upload a valid resume.")
             st.stop()
 
-        job_text = f" for {job_role}" if job_role else ""
         prompt = f"""
         You are an expert career coach and HR professional. Please analyze this resume{f' for the position of {job_role}' if job_role else ''} and provide detailed constructive feedback.
 
@@ -70,25 +69,25 @@ if analyze and uploaded_file:
         {file_content}
         """
 
-        with st.spinner("🔄 جاري تحليل السيرة الذاتية... قد يستغرق ذلك بضع ثوانٍ."):
+        with st.spinner("🔄 Analyzing resume... This may take a few seconds."):
             response = client.models.generate_content(
                 model="gemini-2.0-flash",
                 contents=prompt
             )
             feedback = response.text
 
-        st.success("✅ تم تحليل السيرة الذاتية بنجاح!")
+        st.success("✅ Resume analyzed successfully!")
         st.markdown("---")
         st.markdown(feedback)
         st.markdown("---")
 
         st.download_button(
-            label="📥 تحميل التحليل كملف نصي",
+            label="📥 Download analysis as text file",
             data=feedback,
             file_name="resume_analysis.txt",
             mime="text/plain"
         )
 
     except Exception as e:
-        st.error(f"❌ حدث خطأ: {str(e)}")
-        st.info("تأكد من أن مفتاح API صحيح وأن لديك اتصال بالإنترنت.")
+        st.error(f"❌ An error occurred: {str(e)}")
+        st.info("Please verify that your API key is correct and you have an internet connection.")
