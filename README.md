@@ -69,8 +69,8 @@ Add .env to .gitignore.
 Rodwan Ramzi
 [GitHub](https://github.com/RodwanRamzi) | [LinkedIn](https://www.linkedin.com/in/rodwan-ramzi-273523372/)
 
-##📜 License
+## 📜 License
 MIT
 
-# Built by Rodwan Ramzi
+### Built by Rodwan Ramzi
 
