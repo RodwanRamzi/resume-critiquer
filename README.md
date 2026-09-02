@@ -54,7 +54,7 @@ resume-critiquer/
 ├── .gitignore
 └── README.md
 
-📦 Dependencies
+#📦 Dependencies
 streamlit
 PyPDF2
 python-dotenv
