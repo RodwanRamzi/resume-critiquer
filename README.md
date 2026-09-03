@@ -116,7 +116,8 @@ google-generativeai
 Install all at once:
 
 pip install -r requirements.txt
-🔒 Security
+
+## 🔒 Security
 ⚠️ IMPORTANT: Never commit your .env file to version control.
 
 .env contains your API key – keep it private.
@@ -125,7 +126,7 @@ Add .env to .gitignore (already included).
 
 Use environment variables in production deployments.
 
-👨‍💻 Author
+## 👨‍💻 Author
 Rodwan Ramzi
 
 https://img.shields.io/badge/GitHub-RodwanRamzi-181717?style=flat&logo=github
@@ -134,10 +135,10 @@ https://img.shields.io/badge/Email-ramzirodwan9@gmail.com-EA4335?style=flat&logo
 
 Hybrid Software Engineer | C++, OpenGL & GPU Rendering | AI & Reinforcement Learning Systems
 
-📜 License
+## 📜 License
 Distributed under the MIT License. See LICENSE for more information.
 
-🙏 Acknowledgments
+Acknowledgments
 Google Gemini AI – For providing accessible, powerful AI models.
 
 Streamlit – For making it easy to build beautiful data apps.
