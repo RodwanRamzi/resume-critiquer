@@ -146,14 +146,15 @@ Use environment variables in production deployments.
 ## 👨‍💻 Author
 Rodwan Ramzi
 
-[Github](https://img.shields.io/badge/GitHub-RodwanRamzi-181717?style=flat&logo=github)
-[Linkedin](https://img.shields.io/badge/LinkedIn-RodwanRamzi-0A66C2?style=flat&logo=linkedin)
+[Github](https://img.shields.io/badge/GitHub-RodwanRamzi-181717?style=flat&logo=github) |
+[Linkedin](https://img.shields.io/badge/LinkedIn-RodwanRamzi-0A66C2?style=flat&logo=linkedin) |
 [Email](https://img.shields.io/badge/Email-rothwanramzi@gmail.com-EA4335?style=flat&logo=gmail)
 
 Hybrid Software Engineer | C++, OpenGL & GPU Rendering | AI & Reinforcement Learning Systems
 
 ## 📜 License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. 
+See LICENSE for more information.
 
 ## Acknowledgments
 Google Gemini AI – For providing accessible, powerful AI models.
