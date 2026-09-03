@@ -74,31 +74,43 @@ Whether you're a job seeker looking to improve your resume, a career coach helpi
 ## 🚀 Quick Start
 
 ### 1. Clone the Repository
+```
 git clone https://github.com/RodwanRamzi/resume-critiquer.git
 cd resume-critiquer
+```
 
 ### 2. Create a Virtual Environment
 Windows:
+```python
 python -m venv .venv
 .venv\Scripts\activate
+```
 Linux/Mac:
+```python
 python -m venv .venv
 source .venv/bin/activate
+```
 
 ## 3. Install Dependencies
+```python
 pip install -r requirements.txt
+```
 
 ## 4. Set Up Your Gemini API Key
 Step 1: Get your free API key from Google AI Studio.
 
 Step 2: Create a .env file in the project root:
+```.env
 GOOGLE_API_KEY=your_api_key_here
+```
 
 Step 3: Ensure .env is in .gitignore (it already should be).
 
 ## 5. Run the Application
+```python
 streamlit run main.py
 The app will open at: http://localhost:8502
+```
 
 📂 Project Structure
 resume-critiquer/
@@ -129,9 +141,9 @@ Use environment variables in production deployments.
 ## 👨‍💻 Author
 Rodwan Ramzi
 
-https://img.shields.io/badge/GitHub-RodwanRamzi-181717?style=flat&logo=github
-https://img.shields.io/badge/LinkedIn-RodwanRamzi-0A66C2?style=flat&logo=linkedin
-https://img.shields.io/badge/Email-ramzirodwan9@gmail.com-EA4335?style=flat&logo=gmail
+[https://img.shields.io/badge/GitHub-RodwanRamzi-181717?style=flat&logo=github]
+[https://img.shields.io/badge/LinkedIn-RodwanRamzi-0A66C2?style=flat&logo=linkedin]
+[https://img.shields.io/badge/Email-ramzirodwan9@gmail.com-EA4335?style=flat&logo=gmail]
 
 Hybrid Software Engineer | C++, OpenGL & GPU Rendering | AI & Reinforcement Learning Systems
 
