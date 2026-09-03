@@ -71,7 +71,7 @@ if analyze and uploaded_file:
 
         with st.spinner("🔄 Analyzing resume... This may take a few seconds."):
             response = client.models.generate_content(
-                model="gemini-2.0-flash",
+                model="gemini-3.6-flash",
                 contents=prompt
             )
             feedback = response.text
