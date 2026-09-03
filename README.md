@@ -113,21 +113,26 @@ The app will open at: http://localhost:8502
 ```
 
 📂 Project Structure
+```
 resume-critiquer/
 ├── main.py                 # Main application file
 ├── requirements.txt        # Python dependencies
 ├── .env                    # API key (DO NOT commit)
 ├── .gitignore              # Files to ignore
 └── README.md              # Project documentation
+```
 
 📦 Dependencies
+```
 streamlit
 PyPDF2
 python-dotenv
 google-generativeai
+```
 Install all at once:
-
+```
 pip install -r requirements.txt
+```
 
 ## 🔒 Security
 ⚠️ IMPORTANT: Never commit your .env file to version control.
@@ -141,7 +146,7 @@ Use environment variables in production deployments.
 ## 👨‍💻 Author
 Rodwan Ramzi
 
-[https://img.shields.io/badge/GitHub-RodwanRamzi-181717?style=flat&logo=github]
+[![Github](https://img.shields.io/badge/GitHub-RodwanRamzi-181717?style=flat&logo=github)]
 [https://img.shields.io/badge/LinkedIn-RodwanRamzi-0A66C2?style=flat&logo=linkedin]
 [https://img.shields.io/badge/Email-ramzirodwan9@gmail.com-EA4335?style=flat&logo=gmail]
 
@@ -150,9 +155,9 @@ Hybrid Software Engineer | C++, OpenGL & GPU Rendering | AI & Reinforcement Lear
 ## 📜 License
 Distributed under the MIT License. See LICENSE for more information.
 
-Acknowledgments
+## Acknowledgments
 Google Gemini AI – For providing accessible, powerful AI models.
 
 Streamlit – For making it easy to build beautiful data apps.
 
-Built by Rodwan Ramzi
+# Built by Rodwan Ramzi
